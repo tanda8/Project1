@@ -2,7 +2,6 @@ import math
 
 __author__ = 'tim'
 
-
 class Solver:
     def calculate(self):
         while True:
@@ -11,9 +10,9 @@ class Solver:
             c = int(input("c "))
             d = b ** 2 - 4 * a * c
             if d>=0:
-                disc = math.sqrt(d)
-                root1 = (-b + disc) / (2 * a)
-                root2 = (-b - disc) / (2 * a)
+                discriminant = math.sqrt(d)
+                root1 = (-b + discriminant) / (2 * a)
+                root2 = (-b - discriminant) / (2 * a)
                 print(root1, root2)
             else:
                 print('error')
